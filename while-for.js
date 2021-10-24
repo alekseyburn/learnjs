@@ -1,10 +1,10 @@
 const isSimpleNumber = (n) => {
-  for (let i = 1; i < n; i += 1) {
+  for (let i = 2; i <= n / 2; i += 1) {
     if (n % i === 0) {
       return false;
     }
   }
-  return true;
+  return n > 1;
 };
 
 const showSimpleNumbers = (n) => {
@@ -15,4 +15,4 @@ const showSimpleNumbers = (n) => {
   }
 };
 
-showSimpleNumbers(2);
+showSimpleNumbers(10);
